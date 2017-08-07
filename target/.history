@@ -1,0 +1,11 @@
+clean
+update
+clean
+update
+clean
+compile
+packageBin
+clean
+compile
+packageBin
+doc
