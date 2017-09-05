@@ -24,3 +24,5 @@ libraryDependencies += "org.apache.poi" % "poi" % "3.14"
 // https://mvnrepository.com/artifact/org.vegas-viz/vegas_2.11
 libraryDependencies += "org.vegas-viz" % "vegas_2.11" % "0.3.9"
 libraryDependencies += "org.scalafx" % "scalafx_2.11" % "8.0.102-R11"
+libraryDependencies += "org.jfree" % "jfreechart" % "1.0.14"
+

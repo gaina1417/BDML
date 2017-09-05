@@ -7,8 +7,79 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170719112437"/>
+		date="20170905105158"/>
 	<dependencies>
+		<module organisation="org.jfree" name="jfreechart">
+			<revision name="1.0.14" status="release" pubdate="20111121083516" resolver="public" artresolver="public" homepage="http://www.jfree.org/jfreechart/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="188">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="7804" time="399" location="/home/gaina/.ivy2/cache/org.jfree/jfreechart/ivy-1.0.14.xml" searched="true" original-local-location="/home/gaina/.ivy2/cache/org.jfree/jfreechart/ivy-1.0.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.pom"/>
+				<caller organisation="default" name="bdml_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.0.14" rev-constraint-default="1.0.14" rev-constraint-dynamic="1.0.14" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jfreechart" type="jar" ext="jar" status="successful" details="" size="1461633" time="1897" location="/home/gaina/.ivy2/cache/org.jfree/jfreechart/jars/jfreechart-1.0.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lowagie" name="itext">
+			<revision name="2.1.5" status="release" pubdate="20090420235248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.lowagie.com/iText/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="191">
+				<license name="Mozilla Public License" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<metadata-artifact status="no" details="" size="2750" time="0" location="/home/gaina/.ivy2/cache/com.lowagie/itext/ivy-2.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.pom"/>
+				<caller organisation="org.jfree" name="jfreechart" conf="default, compile, runtime, master" rev="2.1.5" rev-constraint-default="2.1.5" rev-constraint-dynamic="2.1.5" callerrev="1.0.14"/>
+				<artifacts>
+					<artifact name="itext" type="jar" ext="jar" status="no" details="" size="1117661" time="0" location="/home/gaina/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bouncycastle" name="bcprov-jdk14">
+			<revision name="138" status="release" pubdate="20080404190549" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="193">
+				<license name="Bouncy Castle License" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2645" time="0" location="/home/gaina/.ivy2/cache/bouncycastle/bcprov-jdk14/ivy-138.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.pom"/>
+				<caller organisation="com.lowagie" name="itext" conf="compile, runtime" rev="138" rev-constraint-default="138" rev-constraint-dynamic="138" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="bcprov-jdk14" type="jar" ext="jar" status="no" details="" size="1551468" time="0" location="/home/gaina/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bouncycastle" name="bcmail-jdk14">
+			<revision name="138" status="release" pubdate="20080404180727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="192">
+				<license name="Bouncy Castle License" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2645" time="0" location="/home/gaina/.ivy2/cache/bouncycastle/bcmail-jdk14/ivy-138.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.pom"/>
+				<caller organisation="com.lowagie" name="itext" conf="compile, runtime" rev="138" rev-constraint-default="138" rev-constraint-dynamic="138" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="bcmail-jdk14" type="jar" ext="jar" status="no" details="" size="192035" time="0" location="/home/gaina/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.3.04" status="release" pubdate="20061222153752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="190">
+				<metadata-artifact status="no" details="" size="2819" time="0" location="/home/gaina/.ivy2/cache/xml-apis/xml-apis/ivy-1.3.04.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom"/>
+				<caller organisation="org.jfree" name="jfreechart" conf="default, compile, runtime, master" rev="1.3.04" rev-constraint-default="1.3.04" rev-constraint-dynamic="1.3.04" callerrev="1.0.14"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="194354" time="0" location="/home/gaina/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.3.04.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jfree" name="jcommon">
+			<revision name="1.0.17" status="release" pubdate="20111017142602" resolver="public" artresolver="public" homepage="http://www.jfree.org/jcommon/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="189">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="6847" time="290" location="/home/gaina/.ivy2/cache/org.jfree/jcommon/ivy-1.0.17.xml" searched="true" original-local-location="/home/gaina/.ivy2/cache/org.jfree/jcommon/ivy-1.0.17.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17.pom"/>
+				<caller organisation="org.jfree" name="jfreechart" conf="default, compile, runtime, master" rev="1.0.17" rev-constraint-default="1.0.17" rev-constraint-dynamic="1.0.17" callerrev="1.0.14"/>
+				<artifacts>
+					<artifact name="jcommon" type="jar" ext="jar" status="successful" details="" size="506386" time="669" location="/home/gaina/.ivy2/cache/org.jfree/jcommon/jars/jcommon-1.0.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.scalafx" name="scalafx_2.11">
 			<revision name="8.0.102-R11" status="release" pubdate="20160917181033" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalafx.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="184">
 				<license name="BSD" url="https://github.com/scalafx/scalafx/blob/master/LICENSE.txt"/>

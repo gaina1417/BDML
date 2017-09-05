@@ -4,7 +4,7 @@
 		module="bdml_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170719112437"
+		publication="20170905105158"
 	>
 		<description>
 		bdml
@@ -43,5 +43,6 @@
 		<dependency org="org.apache.poi" name="poi" rev="3.14" conf="compile->default(compile)"/>
 		<dependency org="org.vegas-viz" name="vegas_2.11" rev="0.3.9" conf="compile->default(compile)"/>
 		<dependency org="org.scalafx" name="scalafx_2.11" rev="8.0.102-R11" conf="compile->default(compile)"/>
+		<dependency org="org.jfree" name="jfreechart" rev="1.0.14" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
